@@ -1,11 +1,10 @@
 # H4X0R-News
 
-
--How to start SwiftUI Project </br>
--WOrk with Xcode preview and the object library to generate SwiftUI code</br>
--Learn to use SwiftUi modifier to set properties for components</br>
--Learn how to arrange elements using SwiftUI Stacks</br>
--Learn how to add and size Imgae components</br>
+About the app</br>
+-Learn how to work with SwiftUi Lists and the Identifiable Protocol</br>
+-Use a Navigation View to navigate between the List and a detail view</br>
+-Advanced State management using the Observer Design Pattern</br>
+-Learn how to incorporate a UIKit component into SwiftUI by using WebKit to display web pages in app</br>
 
 ![](H4X0R-news-ip.gif)</br>
 app demo on iphone </br>
