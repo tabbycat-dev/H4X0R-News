@@ -8,5 +8,8 @@
 -Learn how to add and size Imgae components</br>
 
 ![](H4X0R-news-ip.gif)
+app demo on iphone
+
 ![](H4X0R-news-mac.gif)
+App demo on mac
 
