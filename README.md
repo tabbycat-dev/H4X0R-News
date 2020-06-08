@@ -7,9 +7,9 @@
 -Learn how to arrange elements using SwiftUI Stacks</br>
 -Learn how to add and size Imgae components</br>
 
-![](H4X0R-news-ip.gif)
-app demo on iphone
+![](H4X0R-news-ip.gif)</br>
+app demo on iphone </br>
 
-![](H4X0R-news-mac.gif)
-App demo on mac
+![](H4X0R-news-mac.gif)</br>
+App demo on mac</br>
 
