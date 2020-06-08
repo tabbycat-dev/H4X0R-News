@@ -13,6 +13,10 @@
 		C2540473248E0F4F0051532C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2540472248E0F4F0051532C /* Assets.xcassets */; };
 		C2540476248E0F4F0051532C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2540475248E0F4F0051532C /* Preview Assets.xcassets */; };
 		C2540479248E0F4F0051532C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2540477248E0F4F0051532C /* LaunchScreen.storyboard */; };
+		C2540482248E15770051532C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2540481248E15770051532C /* NetworkManager.swift */; };
+		C2540484248E17B50051532C /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2540483248E17B50051532C /* PostData.swift */; };
+		C2540489248E2B5A0051532C /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2540488248E2B5A0051532C /* DetailView.swift */; };
+		C254048B248E30CD0051532C /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C254048A248E30CD0051532C /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,11 @@
 		C2540475248E0F4F0051532C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C2540478248E0F4F0051532C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C254047A248E0F4F0051532C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2540481248E15770051532C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		C2540483248E17B50051532C /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		C2540488248E2B5A0051532C /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		C254048A248E30CD0051532C /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		C254048C248E34070051532C /* H4X0R News.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "H4X0R News.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +65,11 @@
 		C254046B248E0F4B0051532C /* H4X0R News */ = {
 			isa = PBXGroup;
 			children = (
+				C254048C248E34070051532C /* H4X0R News.entitlements */,
+				C2540480248E15620051532C /* Model */,
 				C254046C248E0F4B0051532C /* AppDelegate.swift */,
 				C254046E248E0F4B0051532C /* SceneDelegate.swift */,
-				C2540470248E0F4B0051532C /* ContentView.swift */,
+				C2540485248E2B200051532C /* View */,
 				C2540472248E0F4F0051532C /* Assets.xcassets */,
 				C2540477248E0F4F0051532C /* LaunchScreen.storyboard */,
 				C254047A248E0F4F0051532C /* Info.plist */,
@@ -73,6 +84,25 @@
 				C2540475248E0F4F0051532C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C2540480248E15620051532C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C2540481248E15770051532C /* NetworkManager.swift */,
+				C2540483248E17B50051532C /* PostData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C2540485248E2B200051532C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C2540470248E0F4B0051532C /* ContentView.swift */,
+				C2540488248E2B5A0051532C /* DetailView.swift */,
+				C254048A248E30CD0051532C /* WebView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +176,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2540484248E17B50051532C /* PostData.swift in Sources */,
+				C2540489248E2B5A0051532C /* DetailView.swift in Sources */,
+				C2540482248E15770051532C /* NetworkManager.swift in Sources */,
 				C254046D248E0F4B0051532C /* AppDelegate.swift in Sources */,
 				C254046F248E0F4B0051532C /* SceneDelegate.swift in Sources */,
 				C2540471248E0F4B0051532C /* ContentView.swift in Sources */,
+				C254048B248E30CD0051532C /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,8 +318,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "H4X0R News/H4X0R News.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"H4X0R News/Preview Content\"";
+				DEVELOPMENT_TEAM = 4476943J9L;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "H4X0R News/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -294,6 +331,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tannguyen.H4X0R-News";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -303,8 +341,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "H4X0R News/H4X0R News.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"H4X0R News/Preview Content\"";
+				DEVELOPMENT_TEAM = 4476943J9L;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "H4X0R News/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -313,6 +354,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tannguyen.H4X0R-News";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
